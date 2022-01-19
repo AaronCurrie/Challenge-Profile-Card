@@ -1,0 +1,119 @@
+:root {
+    --Dark-cyan: hsl(185, 75%, 39%);
+    --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --Dark-grayish-blue: hsl(227, 10%, 46%);
+    --Dark-gray: hsl(0, 0%, 59%)
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 18px;
+    font-family: 'Kumbh Sans';
+    color: var(--Very-dark-desaturated-blue);
+    background: url('./images/bg-pattern-top.svg'), url('./images/bg-pattern-bottom.svg');
+}
+
+.background {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('./images/bg-pattern-top.svg'), url('./images/bg-pattern-bottom.svg');
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 48vw bottom 40vh, left 45vw top 44vh;
+}
+
+h2 {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--Dark-grayish-blue);
+}
+
+strong {
+    color: var(--Very-dark-desaturated-blue);
+}
+
+h4 {
+    font-size: 1rem;
+}
+
+p {
+    font-size: 0.8rem;
+    letter-spacing: 0.05rem;
+    color: var(--Dark-grayish-blue);
+}
+
+span {
+    margin-left: 10px;
+}
+
+body {
+    background-color: var(--Dark-cyan);  
+}
+
+main {
+    position: relative;
+    width: 350px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 20px 50px 5px hsla(185, 80%, 25%, 0.5);
+}
+
+.top {
+    background-image: url('./images/bg-pattern-card.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 150px;
+}
+
+figure {
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid white; 
+    z-index: 99;
+    height: 100px;
+    width: 100px;
+    margin: -50px 0;
+    background-color: white;
+}
+
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    width: 100%;
+    gap: 15%;
+    padding: 20px 0 20px 0;
+    border-top: 1px solid var(--Dark-gray);
+}
+
+.stats p {
+    font-size: 0.5rem;
+    letter-spacing: 0.1rem;
+}
+
+.cardBody {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.mainInfo {
+    padding: 60px 0 10px 0;
+    line-height: 1.6rem;
+}
+
+section {
+    text-align: center;
+}
